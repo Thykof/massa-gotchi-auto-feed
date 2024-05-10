@@ -1,0 +1,9 @@
+version: '3.5'
+
+services:
+  massa-gotchi-auto-feed:
+    build:
+      context: .
+    restart: always
+    volumes:
+      - ./src:/src

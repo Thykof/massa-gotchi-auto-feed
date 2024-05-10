@@ -1,0 +1,34 @@
+{
+    "name": "my-massa-sc",
+    "version": "0.0.2",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "npx tsx src/feed.ts",
+        "prettier": "prettier '**/src/**/*.ts' --check && as-prettier --check assembly",
+        "prettier:fix": "prettier '**/src/**/*.ts' --write && as-prettier --write assembly",
+        "lint": "eslint .",
+        "lint:fix": "eslint . --fix",
+        "fmt:check": "npm run prettier && npm run lint",
+        "fmt": "npm run prettier:fix && npm run lint:fix"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@massalabs/eslint-config": "^0.0.11",
+        "@massalabs/massa-web3": "^4.0.1",
+        "@massalabs/prettier-config-as": "^0.0.2",
+        "@types/node": "^18.11.10",
+        "dotenv": "^16.0.3",
+        "prettier": "^2.8.1",
+        "tslib": "^2.4.0",
+        "tsx": "^4.7.0",
+        "typescript": "^4.8.4"
+    },
+    "type": "module",
+    "prettier": "@massalabs/prettier-config-as",
+    "engines": {
+        "node": ">=16"
+    }
+}
