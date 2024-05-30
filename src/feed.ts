@@ -3,7 +3,7 @@ import { getClient } from './utils';
 import { config } from 'dotenv';
 config();
 
-const fee = 0n;
+const fee = fromMAS('0.01');
 const coins = fromMAS('0');
 const contractAddress = 'AS12WirWdurggUQSnRTx6cJ5DqwkdWJAkgBXx95yZhzxaWs5eSoaK';
 
